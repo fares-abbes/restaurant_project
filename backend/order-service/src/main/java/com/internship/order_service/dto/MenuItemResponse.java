@@ -1,4 +1,4 @@
-package com.internship.menu_service.dto;
+package com.internship.order_service.dto;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;
