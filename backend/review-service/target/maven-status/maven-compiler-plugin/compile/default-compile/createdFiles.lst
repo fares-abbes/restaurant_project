@@ -1,0 +1,14 @@
+com\internship\review_service\dto\ReviewRequest$ReviewRequestBuilder.class
+com\internship\review_service\service\ReviewService.class
+com\internship\review_service\dto\MenuItemResponse.class
+com\internship\review_service\dto\MenuItemResponse$MenuItemResponseBuilder.class
+com\internship\review_service\dto\ReviewRequest.class
+com\internship\review_service\ReviewServiceApplication.class
+com\internship\review_service\appconfig\WebClientConfig.class
+com\internship\review_service\controller\ReviewController.class
+com\internship\review_service\dto\ReviewResponse.class
+com\internship\review_service\exception\MenuItemNotFoundException.class
+com\internship\review_service\repository\ReviewRepository.class
+com\internship\review_service\model\Review$ReviewBuilder.class
+com\internship\review_service\dto\ReviewResponse$ReviewResponseBuilder.class
+com\internship\review_service\model\Review.class

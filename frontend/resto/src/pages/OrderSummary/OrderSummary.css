@@ -1,0 +1,139 @@
+.order-summary-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+}
+
+.order-confirmation {
+    font-size: 24px;
+    color: #4caf50;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.order-items {
+    margin-top: 20px;
+}
+.order-items h2 {
+    margin-bottom: 20px;
+}
+
+.go-back-button-container {
+    display: flex;
+    justify-content: center; /* Center the button horizontally */
+    margin: 20px 0; /* Space above and below the button */
+}
+
+.go-back-button {
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.go-back-button:hover {
+    background-color: #45a049;
+}
+
+.order-items-title {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    text-align: center;
+    font-weight: bold;
+}
+
+.order-items-item {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    align-items: center;
+    padding: 10px 0;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+}
+
+.order-items-item img {
+    max-width: 50px;
+    max-height: 50px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.order-items-item p {
+    margin: 0;
+}
+
+.order-items-item button {
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.order-items-item button:hover {
+    background-color: #45a049;
+}
+
+.order-summary-totals {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+
+.summary-items,
+.order-total {
+    width: 48%;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.summary-items h2,
+.order-total h2 {
+    margin-bottom: 20px;
+}
+
+.summary-details p {
+    margin: 10px 0;
+}
+
+.order-total-details {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+.order-total-details p {
+    margin: 0;
+}
+
+hr {
+    border: 0;
+    height: 1px;
+    background-color: #ddd;
+}
+
+@media (max-width: 768px) {
+    .order-items-title,
+    .order-items-item {
+        grid-template-columns: repeat(5, 1fr);
+    }
+
+    .order-summary-totals {
+        flex-direction: column;
+    }
+
+    .summary-items,
+    .order-total {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}

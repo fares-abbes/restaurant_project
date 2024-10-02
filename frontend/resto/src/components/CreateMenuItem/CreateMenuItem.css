@@ -1,0 +1,177 @@
+.create-menu-item {
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 30px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    font-family: 'Arial', sans-serif;
+}
+
+.create-menu-item h2 {
+    text-align: center;
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+.create-menu-item form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* Center the entire form's content */
+}
+
+.create-menu-item label {
+    font-size: 14px;
+    font-weight: 600;
+    color: #666;
+    margin-bottom: 8px;
+    align-self: flex-start;
+    /* Align the label to the start */
+}
+
+.create-menu-item input[type="text"],
+.create-menu-item textarea,
+.create-menu-item input[type="number"],
+.create-menu-item select {
+    padding: 12px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    font-size: 16px;
+    width: 100%;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease;
+}
+
+.create-menu-item input[type="text"]:focus,
+.create-menu-item textarea:focus,
+.create-menu-item input[type="number"]:focus,
+.create-menu-item select:focus {
+    border-color: #333;
+    outline: none;
+}
+
+.create-menu-item textarea {
+    resize: vertical;
+    height: 120px;
+}
+
+.create-menu-item .form-row {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    width: 100%;
+    /* Ensure the row takes up the full width */
+}
+
+.create-menu-item .form-group {
+    flex: 1;
+}
+
+.create-menu-item .file-upload-wrapper {
+    display: flex;
+    justify-content: center;
+    /* Center the image upload wrapper */
+    width: 100%;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    margin-left: 420px;
+    /* Add some space below the upload button */
+}
+
+.create-menu-item input[type="file"] {
+    display: none;
+}
+
+.create-menu-item label.custom-file-upload {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #333;
+    padding: 8px 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 600;
+    transition: border-color 0.3s ease;
+    color: #333;
+    background-color: transparent;
+}
+
+.create-menu-item label.custom-file-upload:hover {
+    border-color: #666;
+}
+
+.create-menu-item label.custom-file-upload svg {
+    margin-right: 8px;
+}
+
+.create-menu-item .file-upload-name {
+    font-size: 14px;
+    color: #666;
+    font-weight: 600;
+    overflow: hidden;
+    padding-right: 50%;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 100%;
+    text-align: center;
+}
+
+.create-menu-item button[type="submit"] {
+    padding: 14px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease;
+    width: 100%;
+    /* Ensure the button takes up full width */
+}
+
+.create-menu-item button[type="submit"]:hover {
+    background-color: #555;
+}
+
+@media (max-width: 768px) {
+    .create-menu-item {
+        padding: 20px;
+    }
+
+    .create-menu-item h2 {
+        font-size: 22px;
+    }
+
+    .create-menu-item label {
+        font-size: 13px;
+    }
+
+    .create-menu-item input[type="text"],
+    .create-menu-item textarea,
+    .create-menu-item input[type="number"],
+    .create-menu-item select,
+    .create-menu-item label.custom-file-upload,
+    .create-menu-item .file-upload-name {
+        font-size: 14px;
+    }
+
+    .create-menu-item button[type="submit"] {
+        font-size: 14px;
+        padding: 12px;
+    }
+
+    .create-menu-item .form-row {
+        flex-direction: column;
+    }
+
+    .create-menu-item .form-group {
+        margin-bottom: 15px;
+    }
+}
